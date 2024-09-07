@@ -19,10 +19,11 @@ public class Q1WeirdFunction {
         // TODO: Implement the iterative function
         int output = 0;
         if(n >= 3){
-            int result = v1 + v2 + v3;
-            return result;
+            //int result = v1 + v2 + v3;
+            //return result;
         } else {
-            return n;
+            return output;
         }
+        return 0;
     }
 }
