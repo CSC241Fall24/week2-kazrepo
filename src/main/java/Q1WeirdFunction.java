@@ -17,17 +17,24 @@ public class Q1WeirdFunction {
 
     public static int fIterative(int n) {
         // TODO: Implement the iterative function
-        int v1 = 0;
-        int v2 = 0;
-        int v3 = 0;
-        
-        int output = 0;
-        
-        if(n >= 3){
-            int result = v1 + v2 + v3;
-            return result;
-        } else {
+        if(n < 3){
             return n;
         }
+        
+        int v1 = 2;
+        int v2 = 1;
+        int v3 = 0;
+        
+        int result = 0;
+        
+        for (int i = 3; i <= n; i++) {
+            result = v1 + 2 * v2 + 3 * v3;
+            
+            v3 = v2;
+            v2 = v1;
+            v1 = result;
+        }
+
+        return result;
     }
 }
