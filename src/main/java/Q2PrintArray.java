@@ -13,6 +13,6 @@ public class Q2PrintArray {
             return;
         }
         printRecursion(i - 1);
-        System.out.println(array[i]);
+        System.out.println(array[i - 1]);
     }
 }
